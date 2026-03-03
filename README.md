@@ -11,7 +11,7 @@ Este ecosistema automatizado gestiona el ciclo de vida de **más de 1,700 postul
 
 ## 📊 Vista Previa del Dashboard Interactivo
 
-![Dashboard Preview](Power bi/dashboard_preview.png)
+![Dashboard Preview](Power bi/dashboard_preview)
 
 ### 💡 Insights de Impacto Real
 * **Liderazgo Femenino:** El **59.65%** de los inscritos son mujeres listas para conquistar el mundo STEM.
