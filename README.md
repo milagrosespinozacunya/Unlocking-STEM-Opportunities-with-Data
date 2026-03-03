@@ -11,8 +11,7 @@ Este ecosistema automatizado gestiona el ciclo de vida de **más de 1,700 postul
 
 ## 📊 Vista Previa del Dashboard Interactivo
 
-![Dashboard Preview](Power_bi/dashboard_preview)
-
+![Dashboard Preview](Power%20bi/dashboard_preview.png)
 ### 💡 Insights de Impacto Real
 * **Liderazgo Femenino:** El **59.65%** de los inscritos son mujeres listas para conquistar el mundo STEM.
 * **Compromiso con el Futuro:** Se identificó que **822 personas** dedican entre 5 a 10 horas semanales a su formación técnica.
