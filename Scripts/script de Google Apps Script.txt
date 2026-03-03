@@ -1,0 +1,70 @@
+function enviarCorreoAutomatico(e) {
+  // Obtenemos los valores de la respuesta del formulario
+  var valores = e.values;
+  
+  // Basado en tu nueva estructura de Google Sheets:
+  // [0] Marca temporal, [1] Nombre Completo, [2] Género, [3] Correo
+  var nombre = valores[1]; 
+  var correoUsuario = valores[3]; 
+
+  var asunto = "Acceso: Convirtiendo datos en oportunidades (Proyecto STEM) 🚀";
+  
+  // Tu foto de LinkedIn actualizada
+  var urlFoto = "https://media.licdn.com/dms/image/v2/D4D03AQF937jUwM06Cw/profile-displayphoto-shrink_800_800/B4DZSP1AL_HYAk-/0/1737579825122?e=1772064000&v=beta&t=QtRznPFgmtof0CJf-nLFtbmBMuhPed_5ZzgY23NJeks";
+
+  // Diseño visual en HTML
+  var cuerpoHTML = `
+    <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; max-width: 600px; border: 1px solid #eeeeee; border-radius: 12px; padding: 25px; margin: auto;">
+      
+      <h2 style="color: #1a73e8; text-align: center;">¡Hola, ${nombre}! 👋</h2>
+      
+      <p style="font-size: 16px; line-height: 1.6;">
+        Gracias por sumarte a este ecosistema que busca <strong>cerrar brechas educativas</strong> y potenciar el talento en <strong>Tech y STEM</strong> desde la comunidad universitaria.
+      </p>
+
+      <div style="text-align: center; margin: 35px 0;">
+        <a href="https://docs.google.com/spreadsheets/d/1CYX4MW0gmO1j0k0HxtYUjjZclvXOVuNv6bO4tlhZkMw/edit?gid=1583702346#gid=1583702346&fvid=477486950" 
+           style="background-color: #00875A; color: white; padding: 18px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+           🔓 ACCEDER AL REPOSITORIO AQUÍ
+        </a>
+      </div>
+
+      <p style="font-size: 15px; color: #555; text-align: center;">Acceso inmediato a recursos estratégicos de formación y empleo.</p>
+
+      <div style="background-color: #f8f9fa; border-radius: 8px; padding: 15px; margin-top: 25px;">
+        <p style="margin-top: 0; font-weight: bold; color: #333;">Sigamos conectados:</p>
+        <table width="100%">
+          <tr>
+            <td><a href="https://whatsapp.com/channel/0029VbBV1Ij8aKvR50k8Wc2L" style="color: #25D366; text-decoration: none; font-weight: bold;">🟢 WhatsApp</a></td>
+            <td><a href="https://www.linkedin.com/in/milagros-espinoza-cunya/" style="color: #0077b5; text-decoration: none; font-weight: bold;">🔵 LinkedIn</a></td>
+            <td><a href="https://sites.google.com/view/milagrosespinozacunya/dashboards" style="color: #E67C00; text-decoration: none; font-weight: bold;">📊 Dashboards</a></td>
+          </tr>
+        </table>
+      </div>
+
+      <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+      
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="vertical-align: middle;">
+            <img src="${urlFoto}" width="70" height="70" style="border-radius: 50%; display: block; object-fit: cover; border: 2px solid #1a73e8;" alt="Milagros Espinoza">
+          </td>
+          <td style="padding-left: 20px; vertical-align: middle;">
+            <div style="font-size: 16px; font-weight: bold; color: #2c3e50;">MILAGROS ESPINOZA CUNYA</div>
+            <div style="font-size: 14px; color: #7f8c8d;">Estadística | UNMSM</div>
+            <div style="font-size: 13px; color: #1a73e8; font-weight: bold; margin-top: 2px;">Datos en Oportunidades</div>
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+  `;
+
+  // Envío del correo usando la cuota institucional
+  MailApp.sendEmail({
+    to: correoUsuario,
+    subject: asunto,
+    htmlBody: cuerpoHTML,
+    name: "Milagros Espinoza | Datos en Oportunidades"
+  });
+}
