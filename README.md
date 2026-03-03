@@ -1,6 +1,6 @@
 # Unlocking STEM Opportunities with Data
 
-> **"Dominar la tecnología no es la meta, es el puente para que cada estudiante convierta sus sueños en realidad. En este proyecto, transformamos datos en oportunidades; porque los números nos marcan la ruta, pero el análisis con propósito es lo que realmente nos da el impulso para romper brechas."**
+> **"Dominar la tecnología no es la meta, es el puente para que cada estudiante convierta sus sueños en realidad. En este proyecto, transformamos datos en oportunidades; porque los datos nos revelan el camino, pero el análisis con propósito es lo que realmente nos da el impulso para romper brechas."**
 
 ---
 
