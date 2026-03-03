@@ -38,5 +38,5 @@ GitHub solo permite imágenes estáticas, pero he desplegado la versión interac
 
 ### Ficha Técnica
 * **Áreas de Especialización:** Ingeniería de Datos, Análisis de Mercado, Data Analytics y Data Visualization.
-* * **Herramientas:** Power BI (DAX), Python (Colab), RPA (Power Automate), Google Apps Script.
+* **Herramientas:** Power BI (DAX), Python (Colab), RPA (Power Automate), Google Apps Script.
 * **Impacto:** +1,700 registros procesados de 21 países.
